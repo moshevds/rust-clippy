@@ -64,4 +64,10 @@ impl Iterator for S {
     }
 }
 
+impl From<Vec<Vec<Box<(u32, u32, u32, u32)>>>> for S {
+    fn from(_: Alias) -> Self {
+        unimplemented!()
+    }
+}
+
 fn main() {}

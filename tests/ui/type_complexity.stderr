@@ -96,5 +96,11 @@ error: very complex type used. Consider factoring parts into `type` definitions
 LL |     type Item = Vec<Vec<Box<(u32, u32, u32, u32)>>>;
    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-error: aborting due to 16 previous errors
+error: very complex type used. Consider factoring parts into `type` definitions
+  --> $DIR/type_complexity.rs:67:11
+   |
+LL | impl From<Vec<Vec<Box<(u32, u32, u32, u32)>>>> for S {
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: aborting due to 17 previous errors
 
