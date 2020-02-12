@@ -57,4 +57,11 @@ struct D {
     ),
 }
 
+impl Iterator for S {
+    type Item = Vec<Vec<Box<(u32, u32, u32, u32)>>>;
+    fn next(&mut self) -> Option<Alias> {
+        unimplemented!()
+    }
+}
+
 fn main() {}
